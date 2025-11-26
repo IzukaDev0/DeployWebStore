@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellaris Research - Cosmic Explorer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="tooplate-stellaris-style.css" rel="stylesheet">
+    
+<!--
+
+Tooplate 2140 Stellaris Research
+
+https://www.tooplate.com/view/2140-stellaris-research
+
+Free HTML CSS Template
+
+-->
+</head>
+<body>
+    <canvas id="starfield"></canvas>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-container">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Cosmic logo with planet and orbit -->
+                    <circle cx="50" cy="50" r="35" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="20" fill="none" stroke="#f59e0b" stroke-width="2"/>
+                    <circle cx="50" cy="50" r="12" fill="#7c3aed"/>
+                    
+                    <!-- Orbiting elements -->
+                    <circle cx="85" cy="50" r="4" fill="#f59e0b">
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 50 50" to="360 50 50" dur="8s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="15" cy="50" r="3" fill="#ec4899">
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 50 50" to="-360 50 50" dur="12s" repeatCount="indefinite"/>
+                    </circle>
+                    
+                    <!-- Central glow -->
+                    <circle cx="50" cy="50" r="8" fill="#f59e0b" opacity="0.3"/>
+                </svg>
+                <span class="logo-text">IZUKA STORE</span>
+            </a>
+            
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#missions">MISSIONS</a></li>
+                    <li><a href="#equipment">EQUIPMENT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+    <!-- Star layers -->
+    <div class="stars-layer"></div>
+    
+    <!-- Floating space orbs -->
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    
+    <!-- Shooting stars -->
+    <div class="shooting-star" style="--delay: 0s; --top: 10%; --left: 10%;"></div>
+    <div class="shooting-star" style="--delay: 1.5s; --top: 30%; --left: 60%;"></div>
+    <div class="shooting-star" style="--delay: 3s; --top: 20%; --left: 80%;"></div>
+    <div class="shooting-star" style="--delay: 4.5s; --top: 60%; --left: 30%;"></div>
+    <div class="shooting-star" style="--delay: 6s; --top: 80%; --left: 70%;"></div>
+    
+        <div class="hero-content">
+            <h1 class="cosmic-title">IZUKA STORE</h1>
+            <p class="subtitle">Topup Games Termurah Dan Terpercaya, Mudah, Praktis, dan Cepat</p>
+        </div>
+        <a href="#about" class="scroll-btn">
+            <div class="scroll-btn-inner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                </svg>
+            </div>
+        </a>
+    </section>
+
+    <section id="about" class="fade-in">
+        <h2 class="section-title">EXPLORE PRODUK</h2>
+        <div class="about-section">
+            <div class="about-hero">
+                <h3>Kami menyediakan produk digital termurah untuk anda</h3>
+                <p class="about-description">
+                    Memperkenalkan bot layanan otomatis, yang menggunakan auto payment gateaway, yang cepat, mudah, dan praktis
+                    Kami juga menyediakan system reffound, jika mengalami kendala saat pembelian
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <span class="about-card-icon">⚡</span>
+                    <h4>PPOB Indonesia</h4>
+                    <p>Pelayanan pembayaran PLN, PDAM, dan Token PLN.</p>
+                </div>
+                
+                <div class="about-card">
+                    <span class="about-card-icon">📞</span>
+                    <h4>Pulsa Dan Data</h4>
+                    <p>Menyediakan Pulsa prabayar, Dan pulsa Reguler, dan kami juga menyediakan Layanan Data Internet Dan Voucher Termurah.</p>
+                </div>
+                
+                <div class="about-card">
+                    <span class="about-card-icon">🎮</span>
+                    <h4>TopUp Games</h4>
+                    <p>Pelayanan TopUp Games termurah, dan menyediakan TopUp PUBG, CODM, Free Fire, Dll.</p>
+                </div>
+                
+                <div class="about-card">
+                    <span class="about-card-icon">💸</span>
+                    <h4>TopUp E-Money</h4>
+                    <p>Menyediakan layanan topup E-Money Dan Trasfer uang disemua rekening, dan dompet digital seperti DANA, GoPay, OVO, Shopee Pay, Dll.</p>
+                </div>
+                
+                <div class="about-card">
+                    <span class="about-card-icon">🧧</span>
+                    <h4>Premium Apps</h4>
+                    <p>Kami juga menyediakan layanan aplikasi atau akun premium termurah, dan bergaransi.</p>
+                </div>
+            </div>
+            
+
+    </section>
+
+    <section id="missions" class="missions-section fade-in">
+        <div class="missions-container">
+            <h2 class="section-title">LIST PRODUK</h2>
+            
+            <div class="mission-tabs">
+                <button class="mission-tab active" data-tab="exploration">PPOB</button>
+                <button class="mission-tab" data-tab="research">Pulsa & Voucher</button>
+                <button class="mission-tab" data-tab="discovery">TopUp Games & E-Money</button>
+                <button class="mission-tab" data-tab="future">Apps Premium</button>
+            </div>
+            
+            <div class="mission-content active" id="exploration">
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <h4>PPOB Indonesia</h4>
+                        <p>• TOKEN PLN • PDAM • BPJS.</p>
+                        <span class="mission-status">Tersedia</span>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="mission-content" id="research">
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <h4>Pulsa & Voucher Internet</h4>
+                        <p>• TELKOMSEL • AXIS • TRI • BY.U • XL.</p>
+                        <span class="mission-status">Tersedia</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mission-content" id="discovery">
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <h4>Games</h4>
+                        <p>• Call Of Duty Mobile • Pubg • Free Fire • Mobile Legends • Genshin Impact • Stumble Guys • Point Blank • Growtopia • Roblox.</p>
+                        <span class="mission-status">Tersedia</span>
+                    </div>
+                    <div class="mission-card">
+                        <h4>E-Money</h4>
+                        <p>• DANA • GoPay • Shopee Pay • OVO • Dll .</p>
+                        <span class="mission-status">Tersedia</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mission-content" id="future">
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <h4>Apps Premium</h4>
+                        <p>• Alight Motion • Canva • Netflix • Capcut • Vio • ChatGpt • Gemini • PicsArt • HBO • Dll.</p>
+                        <span class="mission-status">Ready</span>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="equipment" class="fade-in">
+        <h2 class="section-title">CONTACT BOT STORE</h2>
+        <div class="equipment-container">
+            <div class="equipment-item">
+    <span>Izuka Store WhatsApp</span>
+</div>
+
+<div class="equipment-item">
+    <a href="https://t.me/IzukaDevStore_bot" target="_blank">
+        <span>Izuka Store Telegram</span>
+    </a>
+</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">           
+            <div class="footer-section">
+                <h3>Team Developer</h3>
+                <ul>
+                    <li><a href="#">IrukaDev</a></li>
+                    <li><a href="#">Romzi</a></li>
+                    <li><a href="#">Nex-Core</a></li>
+                    <li><a href="#">Izuka Dev Team</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Professional Network</h3>
+                <p style="color: var(--star-silver); margin-bottom: 15px;">
+                    Connect with the global space research community
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="ResearchGate">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L3.09 8.26l1.82 1.28L12 4.8l7.09 4.74 1.82-1.28L12 2M12 7L2 12l10 5 10-5-10-5"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="NASA Collaboration">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Academic Network">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8 8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8m0 2a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6 6 6 0 0 0-6-6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; IzukaDev - 2025: <a href="https://www.tooplate.com" target="_blank" rel="noopener nofollow">😉</a></p>
+        </div>
+    </footer>
+<script src="tooplate-stellaris-script.js"></script>
+</body>
+</html>
