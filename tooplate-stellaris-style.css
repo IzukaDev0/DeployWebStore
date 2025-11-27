@@ -910,12 +910,12 @@ https://www.tooplate.com/view/2140-stellaris-research
             opacity: 0.2;
         }
         .equipment-item a {
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
-  pointer-events: auto;
-		}
-
+    display: block;
+    z-index: 999;
+    position: relative;
+    pointer-events: auto;
+}
+        
         /* Contact */
         .contact-form {
             max-width: 600px;
@@ -1215,7 +1215,13 @@ https://www.tooplate.com/view/2140-stellaris-research
                 height: 120px;
                 font-size: 0.8rem;
             }
-
+            
+            .equipment-item a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  pointer-events: auto;
+}
             .section-title {
                 font-size: 2.4rem;
                 letter-spacing: 2px;
@@ -1244,5 +1250,4 @@ https://www.tooplate.com/view/2140-stellaris-research
             .footer-bottom {
                 font-size: 0.85rem;
             }
-
-        }
+}
